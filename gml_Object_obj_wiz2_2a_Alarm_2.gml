@@ -1,0 +1,2 @@
+x = xpos;
+y = ypos;

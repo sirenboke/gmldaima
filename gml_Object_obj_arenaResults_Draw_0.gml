@@ -1,0 +1,11 @@
+c1 = 65280;
+c2 = 32768;
+text1 = "Challenge ended! " + string(obj_arena_warrior.name) + " is the winner!";
+draw_set_font(f_mid);
+draw_set_valign(fa_top);
+draw_set_halign(fa_center);
+draw_set_alpha(0.5);
+draw_set_color(c_black);
+draw_rectangle(x - 300, room_height - 300, x + 300, room_height, 0);
+draw_set_alpha(1);
+gml_Script_scr_textshadow(x, y + 120, string(text1), c1, c2, 40, 1500);

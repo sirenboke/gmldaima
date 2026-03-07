@@ -1,0 +1,1 @@
+global.stageType = "Corrupted Dimension";

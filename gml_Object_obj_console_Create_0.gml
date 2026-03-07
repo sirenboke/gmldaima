@@ -1,0 +1,11 @@
+global.userName = "";
+showmessage = false;
+checkname = "";
+x = room_width / 2;
+y = room_height / 2;
+msg = "";
+keyboard_string = "";
+limit = 1000;
+cursor = "|";
+delay = room_speed;
+alarm[0] = delay;

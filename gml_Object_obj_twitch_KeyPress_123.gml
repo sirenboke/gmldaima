@@ -1,0 +1,1 @@
+gml_Script_scr_twitch_reconnect_auto();

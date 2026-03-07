@@ -1,0 +1,14 @@
+event_inherited();
+hit = false;
+firstHit = true;
+target = instance_nearest(x, y, obj_enemy);
+dmgType = 1;
+image_speed = 0;
+image_xscale = 2;
+image_yscale = 2;
+spd = 40;
+move_towards_point(x + 1, y + random_range(-0.02, 0.02), spd);
+angle = direction;
+gml_Script_scr_playsound(s_arrow1, 1, 1.2, 0.5);
+yy = 0.01;
+playerX = 300;

@@ -1,0 +1,18 @@
+streamerName = global.channelName;
+ini_open(string(global.platformDir) + "Core Data/List CLIENT.ini");
+var listString = ini_read_string("Subscribers", "Names", "");
+ini_close();
+ini_open(string(global.platformDir) + "Core Data/Full Client Data.ini");
+var stringList = ini_read_string("Player Data List", "String", "");
+global.clientAmount = ini_read_real("Player Data List", "Amount", 0);
+ini_close();
+ini_open(string(global.platformDir) + "Core Data/Premium List CLIENT.ini");
+var premiumListString = ini_read_string("Premiums", "Names", "");
+ini_close();
+global.subList = gml_Script_scr_ds_list_create();
+global.playerListStrings = gml_Script_scr_ds_list_create();
+ds_list_read(global.subList, listString);
+ds_list_read(global.playerListStrings, stringList);
+global.networking = true;
+depth = -10000;
+gml_Script_net_client_connect(global.server_IP, global.server_PORT);

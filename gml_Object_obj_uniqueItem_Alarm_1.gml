@@ -1,0 +1,9 @@
+level = 100;
+c1 = 16777215;
+playerGot = 0;
+sprite_index = spr_uniqueItem;
+image_index = itemID;
+image_speed = 0;
+name = global.uniqueItem[itemID][0];
+class = global.uniqueItem[itemID][3];
+description = global.uniqueItem[itemID][1];

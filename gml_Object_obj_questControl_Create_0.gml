@@ -1,0 +1,3 @@
+questCompleteText = "";
+questText = "";
+legendary = "";

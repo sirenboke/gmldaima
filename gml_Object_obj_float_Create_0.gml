@@ -1,0 +1,13 @@
+alpha = 2;
+yy = y;
+xx = x;
+bgSpd = 0.5 * global.roomSpeed;
+alarm[2] = room_speed / 2;
+depth = -101;
+str = "";
+str1 = "";
+str2 = "";
+c1 = 255;
+c2 = 128;
+alpha = 1;
+alarm[0] = room_speed * 5;

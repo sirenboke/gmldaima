@@ -1,0 +1,11 @@
+image_speed = 0;
+image_xscale = 4;
+image_yscale = 4;
+event_inherited();
+mana = 0;
+manaGain = 1;
+maxMana = 10;
+skillTimer = 0;
+attacking = false;
+c_pet = 16776960;
+rng = 800;

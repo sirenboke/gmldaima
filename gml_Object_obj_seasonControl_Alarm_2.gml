@@ -1,0 +1,12 @@
+gml_Script_scr_ds_list_destroy(global.playerList);
+gml_Script_scr_ds_list_destroy(global.raidList0);
+gml_Script_scr_ds_list_destroy(global.raidList1);
+mp_grid_destroy(global.gameGrid);
+global.season += 1;
+totalSeconds = 0;
+ini_open(string(global.platformDir) + "Campaign Data/Season Results.ini");
+ini_write_real("Season", "Season", global.season);
+ini_section_delete("Time");
+ini_close();
+gml_Script_scr_clearDeathRain();
+room_goto(r_seasonEnd);

@@ -1,0 +1,1 @@
+gml_Script___global_object_depths();

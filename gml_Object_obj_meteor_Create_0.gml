@@ -1,0 +1,14 @@
+event_inherited();
+bgSpd = 0;
+alpha = 1;
+grav = 10;
+angle = irandom(359);
+spin = irandom_range(-5, 5);
+challenge = false;
+image_speed = 0;
+image_index = 0;
+image_xscale = random_range(1, 3);
+image_yscale = image_xscale;
+size = (40 * image_xscale) / 2;
+image_speed = 0;
+gml_Script_scr_playsound(s_meteorSpawn, 0.6, 0.8, 0.3);

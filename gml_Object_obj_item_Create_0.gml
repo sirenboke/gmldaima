@@ -1,0 +1,18 @@
+alarm[0] = room_speed;
+alarm[1] = 1;
+grav = 1 * global.roomSpeed;
+dir = random_range(-0.2, 0.2) * global.roomSpeed;
+image_speed = 0;
+_itemType = irandom(9);
+depth = obj_raid.depth - 1;
+sprite_index = spr_newItems;
+image_index = _itemType;
+global.raidItems += 1;
+myPos2 = global.raidItems;
+myPos = room_width - 290;
+used = false;
+tierText = "";
+equipped = false;
+set = false;
+status = global.stage;
+gml_Script_scr_playsound(choose(s_drop1, s_drop2, s_drop3, s_drop4), 0.9, 1.1, 1);

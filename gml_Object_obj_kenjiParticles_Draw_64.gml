@@ -1,0 +1,8 @@
+if (alarm[1] == -1)
+{
+    draw_sprite_ext(sprite_index, image_index, x, y, image_xscale, image_yscale, 0, color, alpha);
+    alpha -= spd;
+    
+    if (alpha <= 0)
+        alarm[0] = 1;
+}

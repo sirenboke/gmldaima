@@ -1,0 +1,1 @@
+gml_Script_scr_ds_list_destroy(hitList);

@@ -1,0 +1,12 @@
+title = global.milestone[type][0];
+description = global.milestone[type][1];
+sprite_index = global.milestone[type][3];
+image_index = global.milestone[type][5];
+image_speed = 0;
+ini_open(string(global.platformDir) + "Village Data/Data.ini");
+global.milestone[type][4] = 1;
+global.milestone[type][2] = name;
+ini_write_real("Milestones", "Milestone " + string(type), 1);
+ini_write_string("Milestones", "Milestone " + string(type) + " Name", name);
+gml_Script_twitch_chat_say_direct("/me " + string(name) + " has been the first to reach '" + string(global.milestone[type][0]) + "' Milestone!");
+ini_close();

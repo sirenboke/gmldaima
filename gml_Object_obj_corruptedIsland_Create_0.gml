@@ -1,0 +1,29 @@
+myID = 0;
+voteID = 1;
+sector = 1;
+row = 1;
+level = 1;
+type = irandom(global.maxCorruptedChallenges);
+challenge = [];
+challengeText = [];
+challengeValue = [];
+challengeAmount = 0;
+
+for (var i = 0; i < 8; i++)
+    challenge[i] = -1;
+
+var name1 = irandom(global.corruptedNames);
+var name2 = irandom(global.corruptedNames);
+icon = name1 + 1;
+name = string(obj_corruptedControl.corruptedName[name1]) + " " + string(obj_corruptedControl.corruptedName2[name2]);
+yy = 0;
+votes = 0;
+sprite_index = spr_corruptedIslands;
+image_speed = 0;
+image_index = clamp(icon, 1, image_number - 1);
+image_xscale = choose(-4, 4);
+image_yscale = 4;
+alarm[0] = 1;
+alarm[1] = 1;
+getCurve = animcurve_get_channel(simpleAnimations, "up&down");
+percent = 0;

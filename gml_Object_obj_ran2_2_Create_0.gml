@@ -1,0 +1,12 @@
+event_inherited();
+triggered = false;
+image_speed = 2 / (room_speed * 2);
+image_index = 0;
+image_xscale = 2;
+image_yscale = 2;
+alarm[1] = room_speed / 2;
+alarm[0] = room_speed * 20;
+_depth = choose(0, 8);
+image_alpha = 1;
+y += _depth;
+depth += (_depth / 10);

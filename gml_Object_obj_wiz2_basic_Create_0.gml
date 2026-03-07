@@ -1,0 +1,12 @@
+event_inherited();
+image_speed = 0;
+image_index = irandom(image_number - 1);
+image_xscale = 1;
+image_yscale = 1;
+spd = 0;
+bgSpd = 0;
+alpha = 0.8;
+_end = false;
+_spd = 20;
+i = 0.008;
+alarm[1] = 10;

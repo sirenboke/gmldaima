@@ -1,0 +1,17 @@
+global.shake = 0;
+xview = choose(-0.1, 0.1) * 16;
+yview = choose(-0.1, 0.1) * 9;
+viewSize = room_width;
+cameraType = 2;
+chooseCameraPlayer = 0;
+cameraPlayer[0] = 0;
+cameraQueue = 0;
+focusPlayer = -1;
+alarm[0] = room_speed;
+view_object[0] = obj_camera;
+view_hborder[0] = view_wview[0] / 20;
+view_vborder[0] = view_hview[0] / 20;
+view_hspeed[0] = view_wview[0] / 50;
+view_vspeed[0] = view_hview[0] / 50;
+view_xport[0] = 0;
+view_yport[0] = 0;

@@ -1,0 +1,12 @@
+event_inherited();
+image_xscale = 2;
+image_yscale = 2;
+target = instance_nearest(x, y, obj_enemy);
+x = choose(target.x - 50, target.x + 50);
+y = choose(target.y - (target.height / 2) - 50, target.y - (target.height / 2), (target.y - (target.height / 2)) + 50);
+xx = target.x;
+yy = target.y - (target.height / 2);
+spd = 20;
+move_towards_point(xx, yy, spd);
+image_alpha = 1;
+alarm[0] = room_speed / 2;

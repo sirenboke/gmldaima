@@ -1,0 +1,1 @@
+gml_Script_reload_lang_when_changed();

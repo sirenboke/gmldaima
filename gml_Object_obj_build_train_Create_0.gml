@@ -1,0 +1,17 @@
+move_snap(2, 2);
+text = string(global.cmdPrefix) + "train";
+name = "Train";
+depth = -100;
+ini_open(string(global.platformDir) + "Village Data/Data.ini");
+level = ini_read_real("Buildings", name + " Level", 1);
+cost = ini_read_real("Buildings", name + " Cost", 1000);
+oCost = ini_read_real("Buildings", name + " Original Cost", 1000);
+cost2 = ini_read_real("Buildings", name + " Cost 2", 0);
+oCost2 = ini_read_real("Buildings", name + " Original Cost 2", 0);
+ini_close();
+amount = (5 + level) * (1 + (level / 5) + (1 + (level / 2))) * level;
+amount *= (1 + global.corruptionShardEffect[4]);
+costText = gml_Script_scr_bigNumber(cost);
+currentSlots = 0;
+trainList = gml_Script_scr_ds_list_create();
+global.raidingVP = (level / 10) + (global.hunterGuildLevel / 3);

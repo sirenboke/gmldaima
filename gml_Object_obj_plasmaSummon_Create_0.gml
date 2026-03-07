@@ -1,0 +1,12 @@
+event_inherited();
+alarm[0] = 1;
+alarm[1] = room_speed * 3;
+alpha = 1;
+move = choose(-1, 1);
+movespd = random_range(2, 8);
+bgSpd = 0;
+image_speed = 0.6;
+image_index = 0;
+image_xscale = choose(-1, 1);
+image_yscale = 1.9;
+gml_Script_scr_playsound(s_thunder, 0.9, 1.1, 0.2);

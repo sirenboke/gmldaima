@@ -1,0 +1,12 @@
+event_inherited();
+bgSpd = 0;
+image_speed = 0;
+image_xscale = 1;
+image_yscale = 1;
+spd = 0;
+alpha = 0.8;
+_end = false;
+_spd = 20;
+i = 0.008;
+lastHit = -1;
+maxPos = x + 400;

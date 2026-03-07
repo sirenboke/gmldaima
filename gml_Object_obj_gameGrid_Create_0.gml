@@ -1,0 +1,10 @@
+var cellsize = 16;
+alarm[0] = room_speed * 2;
+global.gameGrid = mp_grid_create(0, 0, room_width / cellsize, room_height / cellsize, cellsize, cellsize);
+mp_grid_add_instances(global.gameGrid, obj_townCollision, 1);
+global.underworldGrid = mp_grid_create(-cellsize * 20, 0, (room_width / cellsize) + (cellsize * 20), room_height / cellsize, cellsize, cellsize);
+global.roomWidth = room_width - 200;
+global.roomHeight = 100;
+x = room_width - (sprite_width / 2);
+y = global.roomHeight;
+global.buttonPos = 0;

@@ -1,0 +1,9 @@
+global.tempMoney = gml_Script_Number_Convert_StringToArray("43ac");
+var validnumber = "3";
+var validnotation = "K";
+global.tempMoney = gml_Script_Number_Convert_StringToArray(validnumber + validnotation);
+global.money[0] = 300;
+global.money[1] = 12;
+global.money[4] = 89;
+global.money = gml_Script_Number_Convert_StringToArray("0.3");
+alarm[0] = room_speed * 2;

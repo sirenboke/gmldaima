@@ -1,0 +1,10 @@
+event_inherited();
+fallLimit = room_height - irandom_range(16, 24);
+alarm[0] = random_range(room_speed / 10, (room_speed / 10) * room_speed);
+alarm[1] = alarm[0];
+alpha = 1;
+image_speed = 0;
+image_index = irandom(image_number - 1);
+image_xscale = choose(-2, 2);
+image_yscale = 2;
+lastHit = -4;
